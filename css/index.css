@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*#sec_01*/
+#sec_01{width: 100%; height: 820px; background-image: url(../img/header-bg.jpg); background-size: cover; background-position: 50% 50%; position: relative;}
+
+#sec_01 .cloud{width: 100%; height: 100%; background-image: url(../img/cloud.png);  background-repeat: no-repeat; background-size: auto 400px; animation:moveCloud 120s infinite;}
+@keyframes moveCloud{
+    0%{background-position: 0 100%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0 100%;}
+}
+
+#sec_01 .cloud .title_group{position: absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align: center; color:#fff;}
+#sec_01 .cloud .title_group p{font-size: 18px; /*padding-bottom: 20px;*/ text-shadow: 0 0 2px rgba(0,0,0,0.75); line-height: 1.2;}
+#sec_01 .cloud .title_group h1{font-size: 36px; padding-bottom: 40px; text-shadow: 0 0 4px rgba(0,0,0,0.85); text-transform: uppercase; line-height: 1.2;}
+#sec_01 .cloud .title_group h1 span{font-size: 48px;}
+#sec_01 .cloud .title_group ul{font-size: 0;}
+#sec_01 .cloud .title_group ul li{display: inline-block; width: 160px; margin: 0 20px;}
+#sec_01 .cloud .title_group ul li a{display: block; line-height: 30px; font-size: 16px; color:#fff; background-color: #5e889e; border-radius:4px; text-transform: uppercase; font-weight: bold;}
+#sec_01 .cloud .title_group ul li:hover a{background-color: #999; color:#755562;}
+
+
+#sec_02{text-align: center; margin-top: -60px; padding-bottom: 40px; position: relative;}
+#sec_02 .wrap{width: 1200px; margin: 0 auto; font-size: 0;}
+
+#sec_02 .wrap .cont_box{width: calc((100% / 3) - 20px); margin: 0 10px; display: inline-block; vertical-align: top; font-size: 16px; padding-bottom: 20px; /*background: #aaaaff;*/}
+
+#sec_02 .wrap .cont_box .img_part{height: 130px; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+#sec_02 .wrap .cont_box:nth-child(1) .img_part{background-image: url(../img/if_vector_65_02_473778.svg);}
+#sec_02 .wrap .cont_box:nth-child(2) .img_part{background-image: url(../img/if_vector_65_07_473788.svg);}
+#sec_02 .wrap .cont_box:nth-child(3) .img_part{background-image: url(../img/if_vector_65_14_473802.svg);}
+
+#sec_02 .wrap .cont_box h3{font-size: 18px; color:#5c5c5c; padding-top: 20px;}
+#sec_02 .wrap .cont_box p{font-size: 14px; color:#5c5c5c; padding-top: 20px;}
+
+
+
+#sec_03{width: 100%; height: 200px; background-image: url(../img/Investment-Performance-Banner-650.jpg); background-size: cover; background-position: 50% 50%; background-attachment: fixed;}
+#sec_03 .dark{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: table;}
+#sec_03 .dark .table_center{display: table-cell; text-align: center; vertical-align: middle;}
+#sec_03 .dark .table_center h2{font-size: 24px; color:#fff; padding-bottom: 20px;}
+#sec_03 .dark .table_center a{font-size: 14px; color:#fff;}
+
+#sec_04{width: 100%; height: 800px; background-image: url(../img/main2-bg.png), url(../img/main1-bg.png);
+background-position: 50% 50%, 50% 50%;
+background-size: cover;
+background-repeat: no-repeat;}
+#sec_04 .wrap{width: 1200px; height: 100%; margin: 0 auto; text-align: center; padding: 0 10px;}
+#sec_04 .wrap .title{padding: 80px 0 40px;}
+#sec_04 .wrap .title p{font-size: 36px; color: #5e889e;}
+
+#sec_04 .wrap .menu{width: 100%; height: auto;}
+#sec_04 .wrap .menu .img_box{display: inline-block; width: calc(25% - 20px); height: 420px; background-color: #fff; border-radius: 2px; box-shadow: 0 0 6px rgba(0,0,0,0.7); margin-right: 20px; position: relative; padding: 20px; text-align: left; }
+#sec_04 .wrap .menu .img_box:last-child{margin-right: 0;}
+
+
+#sec_04 .wrap .menu .img_box .img{ overflow: hidden;}
+#sec_04 .wrap .menu .img_box .img > div{width: 240px; height: 160px;  background-position: 50% 50%; background-size: cover; margin-bottom: 40px;  transition: 2s; }
+
+#sec_04 .wrap .menu .img_box:nth-child(1) .img > div{background-image: url(../img/invest-01.jpg);}
+#sec_04 .wrap .menu .img_box:nth-child(2) .img > div{background-image: url(../img/invest-02.jpg);}
+#sec_04 .wrap .menu .img_box:nth-child(3) .img > div{background-image: url(../img/invest-03.jpg);}
+#sec_04 .wrap .menu .img_box:nth-child(4) .img > div{background-image: url(../img/invest-04.jpg);}
+
+#sec_04 .wrap .menu .img_box .img:hover > div{transform: scale(1.05); }
+
+#sec_04 .wrap .menu .img_box h2{font-size: 18px; color: #5c5c5c;}
+#sec_04 .wrap .menu .img_box p{font-size: 14px; color: #5c5c5c;}
+
+
+#sec_04 .wrap .menu .img_box a{position: absolute; bottom: 20px; right: 20px;}
+#sec_04 .wrap .menu .img_box a img{height: 40px; width: 40px;}
+
+#sec_04 .wrap .buttom{width: 100%; height: 50px; padding: 100px 0 80px;}
+#sec_04 .wrap .buttom a{}
+#sec_04 .wrap .buttom a img{width: 100%; line-height: 50px;}
+
+#sec_05{background-image: url(../img/quick-enquiry.jpg); background-position: 50% 60%; background-size: cover; width: 100%; height: 430px;} 
+#sec_05 .dark{width: 100%; height: 100%; background-color: rgba(160,181,192,0.6);}
+#sec_05 .dark .wrap{width: 1200px; height: auto; margin: 0 auto; padding: 0 10px; text-align: center;}
+#sec_05 .dark .wrap .title{padding: 60px 0 40px; }
+#sec_05 .dark .wrap .title p{font-size: 36px; color: #fff;}
+
+#sec_05 .dark .wrap .logo_part{}
+#sec_05 .dark .wrap .logo_part ul{font-size: 0;}
+#sec_05 .dark .wrap .logo_part ul li{display: inline-block; width: calc((100% / 6) - 20px); height: 100px;vertical-align: top; margin: 0 10px 20px;}
+#sec_05 .dark .wrap .logo_part ul li a{}
+#sec_05 .dark .wrap .logo_part ul li:last-child a{}
+#sec_05 .dark .wrap .logo_part ul li a img{width: 100%; height: 100px;}

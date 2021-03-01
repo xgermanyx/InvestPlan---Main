@@ -1,0 +1,75 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Stem';
+    src: url('../fonts/Stem-Regular.eot');
+    src: url('../fonts/Stem-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Stem-Regular.woff2') format('woff2'),
+        url('../fonts/Stem-Regular.woff') format('woff'),
+        url('../fonts/Stem-Regular.ttf') format('truetype'),
+        url('../fonts/Stem-Regular.svg#Stem-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'Stem';}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, main:after, nav:after, footer:after{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+/*header part CSS*/
+header{height: 70px; background-color: #ddd;}
+header .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px; position: relative; background: }
+header .wrap .logo{position: absolute; top:0; left:-70px; width: 302px; height: 115px; background-image: url(../img/logo-img1.png); background-repeat: no-repeat; background-position: 50% 50%; z-index: 1;}
+header .wrap .logo a{display: block; height: 100%; position: relative; z-index: 1;}
+header .wrap .logo a img{position: absolute; top:0; left:50%; transform:translateX(-30%); height: 90px; }
+
+/*5c5c5c -> 755562*/
+header .wrap nav{text-align: center; font-size: 0;}
+header .wrap nav ul{}
+header .wrap nav ul li{display: inline-block; margin: 0 15px;}
+header .wrap nav ul li a{display: block; line-height: 70px; font-size: 16px; color:#5c5c5c; font-weight: bold; position: relative;}
+
+header .wrap nav ul li a:after{content:""; width: 100%; height: 2px; background-color: transparent; position: absolute; left:0; bottom:0;}
+
+header .wrap nav ul li.active a, header .wrap nav ul li:hover a{color:#755562;}
+header .wrap nav ul li.active a:after, header .wrap nav ul li:hover a:after{background-color: #755562;}
+
+header .wrap .btn{position: absolute; top:0; right:10px; padding: 20px 0;}
+header .wrap .btn a{width: 180px; height: 30px; display: block; line-height: 30px; text-align: center; border-radius:4px; background-color: #5e889e; color:#fff; font-size: 16px; text-transform: uppercase;}
+header .wrap .btn a span{font-weight: bold;}
+
+
+/*footer part CSS*/
+footer{width: 100%; height: 160px; background-color: #5c5c5c;}
+footer .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px; position: relative;}
+footer .wrap .info{display: inline-block; position: absolute; top: 50%; left: 10px; transform: translateY(-50%); width: 450px; height: 60px;}
+footer .wrap .info p{font-size: 14px; color: #fff; }
+
+footer .wrap .sns{ }
+footer .wrap .sns > ul{position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+footer .wrap .sns > ul > li{ display: inline-block; margin: 0 10px; }
+footer .wrap .sns > ul > li > a{display: inline-block;  width: 40px; height: 36px; line-height: 1;}
+footer .wrap .sns > ul > li:nth-child(1) > a{background-image: url(../img/sns/iconfinder_facebook_square_gray_107118.png); background-position: 50% 50%; background-size: cover;}
+footer .wrap .sns > ul > li:nth-child(2) > a{background-image: url(../img/sns/iconfinder_linkedin_square_gray_107090.png); background-position: 50% 50%; background-size: cover;}
+footer .wrap .sns > ul > li:nth-child(3) > a{background-image: url(../img/sns/iconfinder_twitter_square_gray_107067.png); background-position: 50% 50%; background-size: cover;}
+footer .wrap .sns > ul > li:nth-child(4) > a{background-image: url(../img/sns/iconfinder_dribbble_square_gray_107127.png); background-position: 50% 50%; background-size: cover;}
+
+
+
+/*subpage_top part CSS*/
+#sub_bg{height: 280px; background-image: url(../img/header-bg.jpg); background-size: cover; background-position: 50% 0%;}
+#sub_bg .cloud{background-image: url(../img/cloud.png); width: 100%; height: 100%; background-size: 140% auto; animation: moveCloud 120s infinite;}
+@keyframes moveCloud{
+    0%{background-position: 0 100%; }
+    50%{background-position: 100% 100%; }
+    100%{background-position: 0 100%; }
+}
+
+
+
